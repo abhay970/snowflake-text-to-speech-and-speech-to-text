@@ -79,7 +79,7 @@ CREATE STREAMLIT AUDIO_INTERFACES_APP
   COMMENT = 'Demo Streamlit frontend for Text-to-Speech and Speech-to-Text models.';
 
 -- Whether to execute the notebook or not during initial demo setup
--- {% if EXECUTE_NOTEBOOKS %}
+  {% if EXECUTE_NOTEBOOKS %}
     EXECUTE NOTEBOOK TEXT_TO_SPEECH_NOTEBOOK();
     EXECUTE NOTEBOOK SPEECH_TO_TEXT_NOTEBOOK();
--- {%- endif -%}
+  {%- endif -%}
